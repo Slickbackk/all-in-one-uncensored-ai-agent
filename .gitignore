@@ -1,0 +1,10 @@
+runtime/
+models/
+data/
+workspace/
+*.partial
+*.gguf
+.env
+auth.json
+*.log
+__pycache__/

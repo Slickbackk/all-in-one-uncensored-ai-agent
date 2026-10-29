@@ -1,0 +1,22 @@
+model:
+  default: ares
+  provider: custom
+  base_url: http://127.0.0.1:18081/v1
+  api_key: local-not-a-secret
+  context_length: 16384
+agent:
+  max_turns: 30
+  reasoning_effort: none
+terminal:
+  backend: local
+  timeout: 120
+compression:
+  enabled: true
+  threshold: 0.70
+auxiliary:
+  compression:
+    provider: main
+    model: ares
+    base_url: http://127.0.0.1:18081/v1
+    api_key: local-not-a-secret
+    reasoning_effort: none
